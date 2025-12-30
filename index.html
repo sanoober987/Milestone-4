@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Editable Resume Builder</h1>
+    <div class="container">
+        <!-- Form Section -->
+         <form id="resume-form">
+            <!-- Personal Information -->
+             <h2>Personal Information</h2>
+             <input type="file" id="profile-picture" accept="image/*">
+             <input type="text" id="name" placeholder="Your name" required>
+             <input type="email" id="email" placeholder="Email" required>
+             <input type="tel" id="phone" placeholder="Phone Number" required>
+             <input type="text" id="nationality" placeholder="Nationality" required>
+             <input type="date" id="dob" required>
+             <textarea id="address" placeholder="Address"></textarea>
+             <hr>
+             <!-- Objective -->
+              <h2>Objective</h2>
+              <textarea id="objective" placeholder="Your career objective"></textarea>
+                <hr>
+              <!-- Education -->
+               <h2>Education</h2>
+               <input type="text" id="degree" placeholder="Degree" required>
+               <input type="text" id="institution" placeholder="Institution" required>
+               <input type="text" id="year" placeholder="Year" required>
+                <hr>
+               <!-- Skills -->
+                <h2>Skills</h2>
+                <input type="text" id="skills" placeholder="List your skills" required>
+                <hr>
+                <!-- Work Experience -->
+                 <h2>Work Experience</h2>
+                 <textarea id="experience" placeholder="Write your job responsibilities..."></textarea>
+                     <hr>
+                 <!-- Button -->
+                  <button type="button" onclick="generateResume()">Generate Resume</button>
+         </form>
+
+         <!-- Output Section -->
+          <div id="resume-output" contenteditable="true"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
